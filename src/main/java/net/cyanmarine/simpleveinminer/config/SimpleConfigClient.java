@@ -8,7 +8,7 @@ import me.shedaniel.math.Color;
 @ConfigEntries(includeAll = true)
 public class SimpleConfigClient extends SimpleConfig {
     public boolean showMiningProgress = true;
-    public boolean showRestrictionMessages = true;
+    public boolean showRestrictionMessages = false;
 
     @ConfigEntry(comment = "Recommended: If you turn this on, turn restriction messages off and highlights on")
     @ConfigEntry.Boolean(falseKey = "keybindToggles.value.false", trueKey = "keybindToggles.value.true")

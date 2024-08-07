@@ -37,11 +37,6 @@
       "simpleveinminer:veinmining_shape"
     ]
   },
-  "depends": {
-    "fabricloader": ">=0.14.7",
-    "fabric": "*",
-    "minecraft": ">=1.20"
-  },
   "suggests": {},
   "includes": {
     "completeconfig-base": "2.4.0",

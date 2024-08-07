@@ -75,7 +75,7 @@ public abstract class WorldRendererMixin {
             PlayerEntity player = (PlayerEntity) entity;
             SimpleConfigClient.Highlight outline = SimpleVeinminerClient.getConfig().highlight;
             SimpleConfig.SimpleConfigCopy worldConfig = SimpleVeinminerClient.getWorldConfig();
-            if ((SimpleVeinminerClient.veinMineKeybind.isPressed() || (SimpleVeinminerClient.isVeinMiningServerSide && player.isSneaking())) && SimpleVeinminer.canVeinmine(player, world, pos, state, worldConfig.restrictions) && outline.doHighlight) {
+            if ((player.isSneaking() && SimpleVeinminerClient.veinMiningActived || (SimpleVeinminerClient.isVeinMiningServerSide && player.isSneaking())) && SimpleVeinminer.canVeinmine(player, world, pos, state, worldConfig.restrictions) && outline.doHighlight) {
                 ci.cancel();
 
                 assert client.player != null;

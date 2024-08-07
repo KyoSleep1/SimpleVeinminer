@@ -87,10 +87,10 @@ public class SimpleConfig extends Config implements ConfigContainer {
     @ConfigEntries(includeAll = true)
     public static class Restrictions implements ConfigGroup {
         public boolean canVeinmineHungry = false;
-        public boolean canVeinmineWithEmptyHand = true;
-        public boolean creativeBypass = false;
+        public boolean canVeinmineWithEmptyHand = false;
+        public boolean creativeBypass = true;
         @ConfigEntry(comment = "Will only allow to veinmine wood using an axe, dirt using a shovel, stone using a pickaxe, etc.")
-        public boolean canOnlyUseSuitableTools = false;
+        public boolean canOnlyUseSuitableTools = true;
         @Transitive
         public RestrictionList restrictionList = new RestrictionList();
 
